@@ -80,6 +80,39 @@ section{
     max-width: 100%;
 }
 
+.info{
+    margin-top: 5rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.info .container{
+    font-size: 1.7rem;
+}
+
+.info-container img{
+    height: 30rem;
+}
+
+.info-container p{
+    margin-right: 7rem;
+}
+
+.info-container{
+    display: flex;
+    margin-top: 4rem;
+    align-items: center;
+    max-width: 100%;
+}
+
+.info .content{
+    margin-top: 4rem;
+    align-items: center;
+    max-width: 100%;
+    justify-content: center;
+    text-align: center;
+}
 
 @media (max-width:768px) {
     .box > div{
