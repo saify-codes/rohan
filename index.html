@@ -1,0 +1,29 @@
+<p>
+  copy me if you can
+</p>
+
+<script>
+
+  (function() {
+    const checkDevTools = () => {
+        const threshold = 160; // Threshold for detecting DevTools
+        const devToolsOpen = window.outerWidth - window.innerWidth > threshold || window.outerHeight - window.innerHeight > threshold;
+        
+        if (devToolsOpen) {
+            document.write('')
+            window.close();  // Close the window if DevTools are open
+        } else {
+            setTimeout(checkDevTools, 1000);  // Check every second
+        }
+    };
+
+    checkDevTools();  // Start checking
+})();
+
+
+  document.querySelector('p').oncopy = (e) => {
+  e.clipboardData.setData('text/plain', 'FUCK OFF 🖕');
+  e.preventDefault();
+}
+  
+</script>
